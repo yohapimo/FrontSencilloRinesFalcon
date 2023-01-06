@@ -1,103 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="style.css/reset.css">
-    <link rel="stylesheet" href="style.css/style.css">
-</head>
+    <link rel="stylesheet" href="style.css/reset.css" />
+    <link rel="stylesheet" href="style.css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="caja">
-            <h1><img src="img_logos/logo.png"></h1>
-            <nav>
-                <ul>
-                    <li><a href="1.index-falcon.html">Home</a></li>
-                    <li><a href="2.productos-falcon.html">Productos</a></li>
-                    <li><a href="3.contacto.html" target="_blank"">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="caja">
+        <h1><img src="img_logos/logo.png" /></h1>
+        <nav>
+          <ul>
+            <li><a href="1.index-falcon.html">Home</a></li>
+            <li><a href="2.productos-falcon.html">Productos</a></li>
+            <li><a href="3.contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main class=" maincontacto">
-                            <form action="">
-                                <label for="nombreapellido">Nombre y Apellido</label>
-                                <input type="text" id="nombreapellido" class="input-padron" required>
+    <main>
+      <form action="">
+        <label for="nombreapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreapellido" class="input-padron" required />
 
-                                <label for="correoelectronico">Correo Electrónico</label>
-                                <input type="email" id="correoelectronico" class="input-padron" required
-                                    placeholder="email@dominio.com">
+        <label for="correoelectronico">Correo Electrónico</label>
+        <input
+          type="email"
+          id="correoelectronico"
+          class="input-padron"
+          required
+          placeholder="email@dominio.com"
+        />
 
-                                <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" class="input-padron" required
-                                    placeholder="(+57) XXX XXXXXXX">
+        <label for="telefono">Teléfono</label>
+        <input
+          type="tel"
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="(+57) XXX XXXXXXX"
+        />
 
-                                <label for="mensaje">Mensaje</label>
-                                <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          id="mensaje"
+          cols="70"
+          rows="10"
+          class="input-padron"
+          required
+        ></textarea>
 
-                                <fieldset>
-                                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+        <fieldset>
+          <legend>¿Cómo le gustaría que lo contactemos?</legend>
 
-                                    <label for="radio-email"><input type="radio" name="contacto" value="email"
-                                            id="radio-email" />Email</label>
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contacto"
+              value="email"
+              id="radio-email"
+            />Email</label
+          >
 
-                                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
-                                            id="radio-telefono" />Teléfono</label>
+          <label for="radio-telefono"
+            ><input
+              type="radio"
+              name="contacto"
+              value="telefono"
+              id="radio-telefono"
+            />Teléfono</label
+          >
 
-                                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="watsapp"
-                                            id="radio-whatsapp" checked />WatsApp</label>
-                                </fieldset>
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contacto"
+              value="watsapp"
+              id="radio-whatsapp"
+              checked
+            />WatsApp</label
+          >
+        </fieldset>
 
-                                <fieldset>
-                                    <legend>¿En cúal horario prefiere ser atendido?</legend>
-                                    <select name="" id="">
-                                        <option value="">Mañana</option>
-                                        <option value="">Tarde</option>
-                                        <option value="">Noche</option>
-                                    </select>
-                                </fieldset>
+        <fieldset>
+          <legend>¿En cúal horario prefiere ser atendido?</legend>
+          <select name="" id="">
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+          </select>
+        </fieldset>
 
-                                <label class="checkbox">
-                                    <input type="checkbox" checked />¿Le gustaría recibir novedades de la Rines Falcón?
-                                </label>
+        <label class="checkbox">
+          <input type="checkbox" checked />¿Le gustaría recibir novedades de la
+          Rines Falcón?
+        </label>
 
-                                <input type="submit" value="Enviar Formulario" class="enviar" />
-                            </form>
+        <input type="submit" value="Enviar Formulario" class="enviar" />
+      </form>
 
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Día</th>
-                                        <th>Horario</th>
-                                    </tr>
-                                </thead>
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
 
-                                <tbody>
-                                    <tr>
-                                        <td>Lunes</td>
-                                        <td>08h - 20h</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Miércoles</td>
-                                        <td>08h - 20h</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Viernes</td>
-                                        <td>08h - 20h</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            </main>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>08h - 20h</td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td>08h - 20h</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>08h - 20h</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
 
-                            <footer>
-                                <img src=" img_logos/logo_blanco2.jpg" alt="fondo-footer">
-                                <p class="copyright">&copy; Copyright Rines Falcón - 2023</p>
-                            </footer>
-</body>
-
+    <footer>
+      <img src=" img_logos/logo_blanco2.jpg" alt="fondo-footer" />
+      <p class="copyright">&copy; Copyright Rines Falcón - 2023</p>
+    </footer>
+  </body>
 </html>
